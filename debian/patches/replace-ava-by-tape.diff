@@ -1,0 +1,30 @@
+Description: replace ava by tape
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-03-14
+
+--- a/test.js
++++ b/test.js
+@@ -1,5 +1,5 @@
+-import test from 'ava';
+-import parseMilliseconds from '.';
++const test = require('tape');
++const parseMilliseconds = require('.');
+ 
+ test('parse milliseconds into an object', t => {
+ 	t.deepEqual(parseMilliseconds(1000 + 400), {
+@@ -101,6 +101,7 @@
+ 		microseconds: 0,
+ 		nanoseconds: 543
+ 	});
++	t.end();
+ });
+ 
+ test('handle negative millisecond values', t => {
+@@ -133,5 +134,6 @@
+ 			t.is(negative[key], -positive[key]);
+ 		}
+ 	}
++	t.end();
+ });
+ 

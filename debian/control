@@ -1,0 +1,24 @@
+Source: node-parse-ms
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Abhishek Lolage <abhisheklolage@gmail.com>
+Build-Depends: debhelper-compat (= 13)
+ , node-tape <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-parse-ms
+Vcs-Git: https://salsa.debian.org/js-team/node-parse-ms.git
+Homepage: https://github.com/sindresorhus/parse-ms
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-parse-ms
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: Parse milliseconds into an object
+ This package converts input milliseconds to
+ days:hours:minutes:seconds:milliseconds format.
+ .
+ Node.js is an event-based server-side JavaScript engine.

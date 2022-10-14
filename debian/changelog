@@ -1,0 +1,48 @@
+node-parse-ms (2.1.0-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + node-parse-ms: Add Multi-Arch: foreign.
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+    * Fix GitHub tags regex
+    * Fix filenamemangle
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Update standards version to 4.6.0, no changes needed.
+  * Drop dependency to nodejs
+
+ -- Yadd <yadd@debian.org>  Fri, 12 Nov 2021 22:25:14 +0100
+
+node-parse-ms (2.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.0
+  * Bump debhelper compatibility level to 12
+  * Update VCS fields to salsa
+  * Use pkg-js-tools auto test & install
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * New upstream version 2.1.0
+  * Update copyright
+  * Update test (use tape instead of mocha)
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 14 Mar 2020 10:26:07 +0100
+
+node-parse-ms (1.0.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Reupload to unstable
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 10 Sep 2017 12:03:25 +0530
+
+node-parse-ms (1.0.1-1) experimental; urgency=low
+
+  * Initial release (Closes: #853290)
+
+ -- Abhishek Lolage <abhisheklolage@gmail.com>  Tue, 31 Jan 2017 14:24:53 +0000
